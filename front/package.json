@@ -9,6 +9,7 @@
   "author": "Nor",
   "license": "ISC",
   "dependencies": {
-    "next": "^12.3.4"
+    "next": "^12.3.4",
+    "prop-types": "^15.8.1"
   }
 }
