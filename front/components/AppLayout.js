@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Link from "next/link";
-import { Menu } from "antd";
+import { Menu, Input, Row, Col } from "antd";
 
 const items = [
   {
@@ -20,6 +20,10 @@ const items = [
     key: "profile",
   },
   {
+    label: <Input.Search style={{ verticalAlign: "middle" }} enterButton />,
+    key: "search",
+  },
+  {
     label: (
       <Link href="/signup">
         <a>회원가입</a>
@@ -33,7 +37,23 @@ const AppLayout = ({ children }) => {
   return (
     <div>
       <Menu mode="horizontal" items={items} />
-      {children}
+      <Row gutter={8}>
+        <Col xs={24} md={6}>
+          왼쪽 메뉴
+        </Col>
+        <Col xs={24} md={12}>
+          {children}
+        </Col>
+        <Col xs={24} md={6}>
+          <a
+            href="https://codingmyoni.tistory.com/"
+            target="_blank"
+            rel="noreferrer noopner"
+          >
+            Made by Nor
+          </a>
+        </Col>
+      </Row>
     </div>
   );
 };
