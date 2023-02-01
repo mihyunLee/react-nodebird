@@ -9,8 +9,11 @@
   "author": "Nor",
   "license": "ISC",
   "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "antd": "^4.24.7",
     "next": "^12.3.4",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "eslint": "^8.32.0",
