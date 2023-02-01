@@ -4,6 +4,11 @@ import Link from "next/link";
 import { Menu, Input, Row, Col } from "antd";
 import UserProfile from "../components/UserProfile";
 import LoginForm from "../components/LoginForm";
+import styled from "styled-components";
+
+const SearchInput = styled(Input.Search)`
+  vertical-align: middle;
+`;
 
 const items = [
   {
@@ -23,7 +28,7 @@ const items = [
     key: "profile",
   },
   {
-    label: <Input.Search style={{ verticalAlign: "middle" }} enterButton />,
+    label: <SearchInput enterButton />,
     key: "search",
   },
   {
