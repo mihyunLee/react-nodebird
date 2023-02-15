@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { Avatar, Button, Card } from "antd";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
-import { logoutAction } from "../reducers";
+import { logoutAction } from "../reducers/user";
 
 const LogoutButton = styled(Button)`
   margin-top: 10px;
