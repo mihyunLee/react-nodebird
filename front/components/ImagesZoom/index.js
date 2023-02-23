@@ -8,6 +8,7 @@ import {
   SlickWrapper,
   ImgWrapper,
   Global,
+  Indicator,
 } from "./styles";
 
 const ImagesZoom = ({ images, onClose }) => {
@@ -34,6 +35,11 @@ const ImagesZoom = ({ images, onClose }) => {
             </ImgWrapper>
           ))}
         </Slick>
+        <Indicator>
+          <div>
+            {currentSlide + 1} / {images.length}
+          </div>
+        </Indicator>
       </SlickWrapper>
     </Overlay>
   );
