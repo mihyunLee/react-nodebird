@@ -1,13 +1,21 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import Slick from "react-slick";
-import { Overlay, Header, CloseBtn, SlickWrapper, ImgWrapper } from "./styles";
+import {
+  Overlay,
+  Header,
+  CloseBtn,
+  SlickWrapper,
+  ImgWrapper,
+  Global,
+} from "./styles";
 
 const ImagesZoom = ({ images, onClose }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
     <Overlay>
+      <Global />
       <Header>
         <h1>상세 이미지</h1>
         <CloseBtn onClick={onClose}>X</CloseBtn>
